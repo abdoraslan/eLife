@@ -1,0 +1,126 @@
+.custom-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+
+}
+
+.card-left {
+  flex: 1;
+  background-color: #f0f0f0;
+}
+
+.card-right {
+  padding: 4em;
+  flex: 1;
+  text-align: left;
+}
+
+.vibrating-image {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+ 
+}
+
+.vibrating-image:hover {
+  -webkit-animation: vibration 0.8s ease-in-out infinite;
+  animation: vibration 0.8s ease-in-out infinite;
+}
+
+@keyframes vibration {
+  0%,
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    -ms-transform: rotate(1.5deg);
+    -o-transform: rotate(1.5deg);
+    transform: rotate(1.5deg);
+}
+  50% {
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    -ms-transform: rotate(-1.5deg);
+    -o-transform: rotate(-1.5deg);
+    transform: rotate(-1.5deg);
+}
+  75% {
+    -webkit-transform: rotate(1.5deg);
+    -moz-transform: rotate(1.5deg);
+    -ms-transform: rotate(1.5deg);
+    -o-transform: rotate(1.5deg);
+    transform: rotate(1.5deg);
+}
+}
+
+@media (max-width: 355.99px) {
+    
+    .vibrating-image {
+      width: 250px; /* Reduce image size */
+      height: 250px;
+    }
+    .custom-card {
+        flex-direction: column !important;
+      }
+      .card-right {
+    padding: 4em 1.5em;
+  }
+  
+  }
+
+@media (min-width:356px) and ( max-width: 575.99px) {
+  .custom-card {
+    flex-direction: column !important;
+  }
+  .vibrating-image {
+    width: 300px; /* Reduce image size */
+    height: 300px;
+  }
+
+  .card-right {
+    padding: 4em 1.5em;
+  }
+}
+
+
+@media (min-width:576px) and ( max-width: 767.99px) {
+  .custom-card {
+    flex-direction: column !important;
+  }
+  .vibrating-image {
+    width: 400px; /* Reduce image size */
+    height: 400px;
+  }
+
+  
+}
+
+
+@media (min-width:768px) and ( max-width: 991.99px) {
+  .custom-card {
+    flex-direction: column !important;
+  }
+  .vibrating-image {
+    width: 400px; /* Reduce image size */
+    height: 400px;
+  }
+  
+}

@@ -1,0 +1,85 @@
+.wish-card {
+    border: 1px solid #dee2e6;
+    height: 400px; /* Fixed uniform height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Evenly distribute content */
+    transition: transform 0.2s;
+    border-radius: 8px;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.wish-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.03);
+}
+
+.wish-image-container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.wish-image {
+    height: 130px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.wish-card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.wish-card-price {
+    font-size: 16px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.wish-card-description {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 15px;
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+}
+
+.wish-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.delete-wish-button {
+    background-color: #dc3545;
+    align-self: flex-end;
+    border: none;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .wish-image {
+        max-height: 160px;
+        height: auto;
+    }
+    
+
+
+}

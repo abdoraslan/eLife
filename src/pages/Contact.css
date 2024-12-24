@@ -1,0 +1,139 @@
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 100px 50px 50px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-carousel {
+    flex: 1 1 60%;
+    min-width: 300px;
+    
+}
+
+.carousel-image {
+    height: 500px;
+    object-fit: cover;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+    -webkit-filter: brightness(50%) blur(2px);
+    filter: brightness(50%) blur(2px);
+
+}
+
+.carousel-image:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.contact-content {
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #f0f0b0; /* Near-white with a pale yellow hue */
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: #f0f0b0; /* Matches the heading color */
+}
+
+.contact-text {
+    color: white;
+    text-decoration: none; /* Removes underline */
+    cursor: pointer;
+}
+
+.contact-form-container {
+    flex: 1 1 35%;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-container h3 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    background: #f0f0b0; 
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-button:hover {
+    background: #e6e69f; /* Slightly darker yellow on hover */
+    color: #111;
+}
+
+@media (max-width: 450px) {
+    .carousel-image {
+        object-fit: fill;
+        height: auto;
+    }
+
+    .contact-content {
+        font-size: 0.9rem; /* Reduce the content font size */
+    }
+
+    .contact-content h2 {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    .contact-item {
+        font-size: 1rem; /* Adjust contact item text size */
+    }
+
+    .contact-icon {
+        font-size: 1.2rem; /* Adjust icon size */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-image {
+        object-fit: fill; 
+        height: auto;
+    }
+}

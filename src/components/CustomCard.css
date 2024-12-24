@@ -1,0 +1,101 @@
+
+
+
+.handle-width {
+  width: 50%;
+}
+
+.space {
+  margin-top: 140px;
+}
+  .custom-subtitle {
+    font-size: 3rem !important; 
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .image-container {
+    background-color: #C1D0F1 !important;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    margin-left: 20px;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+  
+  .rotating-image {
+    -webkit-transition: transform 0.1s ease-in-out;
+    -moz-transition: transform 0.1s ease-in-out;
+    -ms-transition: transform 0.1s ease-in-out;
+    -o-transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+
+}
+  
+  .image-container:hover .rotating-image {
+    -webkit-animation: vibration 0.5s ease-in-out infinite;
+    animation: vibration 0.5s ease-in-out infinite;
+
+}
+  
+  @keyframes vibration {
+    0%, 100% {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+
+}
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+  }
+
+  
+  @media (max-width: 390px) {
+    .image-container{
+      width: 200px;
+      height: 200px;
+    }
+
+    .image-container img {
+      height: 150px;
+      width: 150px;
+    }
+  }  
+
+  /* For extra small screens (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Styles for extra small screens */
+  .custom-subtitle{
+    font-size: 2.1rem !important;
+  }
+
+}
+

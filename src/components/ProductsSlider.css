@@ -1,0 +1,22 @@
+.home-swiper{
+  padding: 1em .5em !important;  
+  height: 350px !important;
+  position: relative !important;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  z-index: 1000 !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: gray !important;
+  font-size: 2em !important;
+  font-weight: bold !important;
+  position: absolute !important;
+  top: -2px !important;
+}
+
+
